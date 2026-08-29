@@ -1,0 +1,7 @@
+0.7
+2020.2
+Nov 14 2025
+19:37:27
+D:/Documents/SEM 2/HWLAB_TA/Memory_stage/Memory_stage.sim/sim_1/behav/xsim/glbl.v,1756381829,verilog,,,,glbl,,,,,,,,
+D:/Documents/SEM 2/HWLAB_TA/Memory_stage/memory.v,1771067889,verilog,,D:/Documents/SEM 2/HWLAB_TA/Memory_stage/tb_mem.v,,data_mem;instr_mem,,,C:/AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/Documents/SEM 2/HWLAB_TA/Memory_stage/tb_mem.v,1771067990,verilog,,,,tb_mem_top,,,C:/AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,

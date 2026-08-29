@@ -1,0 +1,25 @@
+Time resolution is 1 ps
+PC: 00000000 | Instr: fe010113
+PC: 00000004 | Instr: 00812e23
+PC: 00000008 | Instr: 02010413
+PC: 0000000c | Instr: 06400793
+PC: 00000010 | Instr: fef42623
+PC: 00000014 | Instr: 00200793
+PC: 00000018 | Instr: fef42423
+PC: 0000001c | Instr: fec42703
+PC: 00000020 | Instr: fe842783
+PC: 00000024 | Instr: 00f707b3
+PC: 00000028 | Instr: fef42223
+PC: 0000002c | Instr: fe442783
+PC: 00000030 | Instr: 00078513
+PC: 00000034 | Instr: 01c12403
+PC: 00000038 | Instr: 02010113
+PC: 0000003c | Instr: 00008067
+PC: 00000040 | Instr: 00000000
+PC: 00000044 | Instr: xxxxxxxx
+PC: 00000048 | Instr: xxxxxxxx
+PC: 0000004c | Instr: xxxxxxxx
+Starting DMEM Write/Read Test...
+DMEM Readback (Forwarded): zzzzzzzz
+Simulation Finished.
+$finish called at time : 276 ns : File "D:/Documents/SEM 2/HWLAB_TA/Memory_stage/tb_mem.v" Line 83

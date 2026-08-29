@@ -1,0 +1,8 @@
+0.7
+2020.2
+Nov 14 2025
+19:37:27
+D:/Documents/SEM 2/HWLAB_TA/EX_Pipeline_stage/EX_Pipeline_stage.sim/sim_1/behav/xsim/glbl.v,1756381829,verilog,,,,glbl,,,,,,,,
+D:/Documents/SEM 2/HWLAB_TA/EX_Pipeline_stage/execute.v,1770720514,verilog,,D:/Documents/SEM 2/HWLAB_TA/EX_Pipeline_stage/tb_execute.v,D:/Documents/SEM 2/HWLAB_TA/EX_Pipeline_stage/opcode.vh,ex_mem_wb_reg;execute,,,../../../../;C:/AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/Documents/SEM 2/HWLAB_TA/EX_Pipeline_stage/opcode.vh,1770099984,verilog,,,,,,,,,,,,
+D:/Documents/SEM 2/HWLAB_TA/EX_Pipeline_stage/tb_execute.v,1770714102,verilog,,,,tb_execute,,,../../../../;C:/AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,

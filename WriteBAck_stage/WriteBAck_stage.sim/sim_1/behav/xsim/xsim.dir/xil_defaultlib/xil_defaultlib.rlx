@@ -1,0 +1,8 @@
+0.7
+2020.2
+Nov 14 2025
+19:37:27
+D:/Documents/SEM 2/HWLAB_TA/WriteBAck_stage/WriteBAck_stage.sim/sim_1/behav/xsim/glbl.v,1756381829,verilog,,,,glbl,,,,,,,,
+D:/Documents/SEM 2/HWLAB_TA/WriteBAck_stage/opcode.vh,1770810809,verilog,,,,,,,,,,,,
+D:/Documents/SEM 2/HWLAB_TA/WriteBAck_stage/tb_wb.v,1771163458,verilog,,,,wb_tb,,,../../../../;C:/AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/Documents/SEM 2/HWLAB_TA/WriteBAck_stage/wb.v,1771167840,verilog,,D:/Documents/SEM 2/HWLAB_TA/WriteBAck_stage/tb_wb.v,D:/Documents/SEM 2/HWLAB_TA/WriteBAck_stage/opcode.vh,wb,,,../../../../;C:/AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,

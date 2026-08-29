@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/SEM 2/HWLAB_TA/EX_Pipeline_stage/execute.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module execute
+INFO: [VRFC 10-311] analyzing module ex_mem_wb_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/SEM 2/HWLAB_TA/EX_Pipeline_stage/tb_execute.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_execute

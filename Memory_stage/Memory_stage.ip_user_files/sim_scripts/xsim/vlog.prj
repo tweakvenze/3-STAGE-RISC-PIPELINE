@@ -1,0 +1,11 @@
+sv xpm -i "C:/AMDDesignTools/2025.2/Vivado/data/rsb/busdef" \
+"C:/AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+
+verilog xil_defaultlib -i "C:/AMDDesignTools/2025.2/Vivado/data/rsb/busdef" \
+"../../../memory.v" \
+"../../../tb_mem.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

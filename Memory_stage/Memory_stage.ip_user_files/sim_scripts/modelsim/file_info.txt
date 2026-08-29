@@ -1,0 +1,5 @@
+xpm_memory.sv,systemverilog,xpm,../../../../../../../../../../../AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,incdir="C:/AMDDesignTools/2025.2/Vivado/data/rsb/busdef"
+xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../../../../../AMDDesignTools/2025.2/Vivado/data/ip/xpm/xpm_VCOMP.vhd,incdir="C:/AMDDesignTools/2025.2/Vivado/data/rsb/busdef"
+memory.v,verilog,xil_defaultlib,D:/Documents/SEM 2/HWLAB_TA/Memory_stage/memory.v,incdir="C:/AMDDesignTools/2025.2/Vivado/data/rsb/busdef"
+tb_mem.v,verilog,xil_defaultlib,D:/Documents/SEM 2/HWLAB_TA/Memory_stage/tb_mem.v,incdir="C:/AMDDesignTools/2025.2/Vivado/data/rsb/busdef"
+glbl.v,Verilog,xil_defaultlib,glbl.v

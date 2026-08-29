@@ -1,0 +1,11 @@
+Time resolution is 1 ps
+WARNING: File ../mem_generator/imem_dmem/dmem.hex referenced on D:/Documents/SEM 2/HWLAB_TA/FULL_PIPELINE/wb.v at line 50 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File ../mem_generator/imem_dmem/imem.hex referenced on D:/Documents/SEM 2/HWLAB_TA/FULL_PIPELINE/wb.v at line 50 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+time:                    0 ,result =          0
+next_pc = 00000000
+next_pc = 00000000
+next_pc = 00000000
+All instructions are Fetched
+next_pc = 00000004
+$finish called at time : 470 ns : File "D:/Documents/SEM 2/HWLAB_TA/FULL_PIPELINE/tb_pipeline.v" Line 79
+Memory in use : 12316 KB (peak memory: 12316 KB)     CPU usage : 108 ms

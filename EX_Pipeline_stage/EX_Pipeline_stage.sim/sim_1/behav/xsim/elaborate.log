@@ -1,0 +1,19 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_execute_behav xil_defaultlib.tb_execute xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ex_mem_wb_reg
+Compiling module xil_defaultlib.execute
+Compiling module xil_defaultlib.tb_execute
+WARNING: [XSIM 43-3373] "D:/Documents/SEM 2/HWLAB_TA/EX_Pipeline_stage/tb_execute.v" Line 148. System function $fgets is used as system task. This system function should have a LHS e.g. x=$fgets().
+WARNING: [XSIM 43-3373] "D:/Documents/SEM 2/HWLAB_TA/EX_Pipeline_stage/tb_execute.v" Line 158. System function $fgets is used as system task. This system function should have a LHS e.g. x=$fgets().
+WARNING: [XSIM 43-3373] "D:/Documents/SEM 2/HWLAB_TA/EX_Pipeline_stage/tb_execute.v" Line 162. System function $sscanf is used as system task. This system function should have a LHS e.g. x=$sscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_execute_behav

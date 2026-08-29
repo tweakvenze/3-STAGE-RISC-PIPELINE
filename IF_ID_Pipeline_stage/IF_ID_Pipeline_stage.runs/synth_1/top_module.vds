@@ -1,0 +1,343 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Feb  2 21:57:02 2026
+# Process ID         : 21536
+# Current directory  : D:/Documents/SEM 2/HWLAB_TA/IF_ID_Pipeline_stage/IF_ID_Pipeline_stage.runs/synth_1
+# Command line       : vivado.exe -log top_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
+# Log file           : D:/Documents/SEM 2/HWLAB_TA/IF_ID_Pipeline_stage/IF_ID_Pipeline_stage.runs/synth_1/top_module.vds
+# Journal file       : D:/Documents/SEM 2/HWLAB_TA/IF_ID_Pipeline_stage/IF_ID_Pipeline_stage.runs/synth_1\vivado.jou
+# Running On         : DESKTOP-9LLI76O
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+# CPU Frequency      : 2112 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16957 MB
+# Swap memory        : 1791 MB
+# Total Virtual      : 18748 MB
+# Available Virtual  : 3554 MB
+#-----------------------------------------------------------
+source top_module.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 528.715 ; gain = 223.625
+Command: read_checkpoint -auto_incremental -incremental {D:/Documents/SEM 2/HWLAB_TA/IF_ID_Pipeline_stage/IF_ID_Pipeline_stage.srcs/utils_1/imports/synth_1/tb_if_id.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Documents/SEM 2/HWLAB_TA/IF_ID_Pipeline_stage/IF_ID_Pipeline_stage.srcs/utils_1/imports/synth_1/tb_if_id.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_module -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10656
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1278.301 ; gain = 542.551
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'clk', assumed default net type 'wire' [D:/Documents/SEM 2/HWLAB_TA/IF_ID_Pipeline_stage/top_fpga.v:28]
+INFO: [Synth 8-6157] synthesizing module 'top_module' [D:/Documents/SEM 2/HWLAB_TA/IF_ID_Pipeline_stage/top_fpga.v:2]
+INFO: [Synth 8-3876] $readmem data file 'inputb.mem' is read successfully [D:/Documents/SEM 2/HWLAB_TA/IF_ID_Pipeline_stage/top_fpga.v:20]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [D:/Documents/SEM 2/HWLAB_TA/IF_ID_Pipeline_stage/top_fpga.v:141]
+	Parameter DIVISOR bound to: 100000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (0#1) [D:/Documents/SEM 2/HWLAB_TA/IF_ID_Pipeline_stage/top_fpga.v:141]
+INFO: [Synth 8-6157] synthesizing module 'IF_ID' [D:/Documents/SEM 2/HWLAB_TA/IF_ID_Pipeline_stage/IF_ID.v:2]
+INFO: [Synth 8-6157] synthesizing module 'id_ex_reg' [D:/Documents/SEM 2/HWLAB_TA/IF_ID_Pipeline_stage/IF_ID.v:221]
+INFO: [Synth 8-6155] done synthesizing module 'id_ex_reg' (0#1) [D:/Documents/SEM 2/HWLAB_TA/IF_ID_Pipeline_stage/IF_ID.v:221]
+INFO: [Synth 8-6155] done synthesizing module 'IF_ID' (0#1) [D:/Documents/SEM 2/HWLAB_TA/IF_ID_Pipeline_stage/IF_ID.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'top_module' (0#1) [D:/Documents/SEM 2/HWLAB_TA/IF_ID_Pipeline_stage/top_fpga.v:2]
+WARNING: [Synth 8-3848] Net inst_mem_read_data in module/entity top_module does not have driver. [D:/Documents/SEM 2/HWLAB_TA/IF_ID_Pipeline_stage/top_fpga.v:71]
+WARNING: [Synth 8-3848] Net wb_alu_to_reg in module/entity top_module does not have driver. [D:/Documents/SEM 2/HWLAB_TA/IF_ID_Pipeline_stage/top_fpga.v:72]
+WARNING: [Synth 8-3848] Net wb_mem_to_reg in module/entity top_module does not have driver. [D:/Documents/SEM 2/HWLAB_TA/IF_ID_Pipeline_stage/top_fpga.v:73]
+WARNING: [Synth 8-7129] Port stall in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_mem_is_valid in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_stall in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_alu_to_reg in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_mem_to_reg in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dest_reg_sel[4] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dest_reg_sel[3] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dest_reg_sel[2] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dest_reg_sel[1] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_dest_reg_sel[0] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[31] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[30] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[29] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[28] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[27] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[26] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[25] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[24] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[23] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[22] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[21] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[20] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[19] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[18] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[17] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[16] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[15] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[14] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[13] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[12] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[11] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[10] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[9] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[8] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[7] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[6] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[5] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[4] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[3] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[2] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[1] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_result[0] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[31] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[30] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[29] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[28] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[27] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[26] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[25] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[24] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[23] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[22] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[21] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[20] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[19] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[18] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[17] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[16] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[15] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[14] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[13] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[12] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[11] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[10] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[9] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[8] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[7] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[6] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[5] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[4] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[3] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[2] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[1] in module IF_ID is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_read_data[0] in module IF_ID is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1397.344 ; gain = 661.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1397.344 ; gain = 661.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1397.344 ; gain = 661.594
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1397.344 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Documents/SEM 2/HWLAB_TA/IF_ID_Pipeline_stage/led.xdc]
+Finished Parsing XDC File [D:/Documents/SEM 2/HWLAB_TA/IF_ID_Pipeline_stage/led.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Documents/SEM 2/HWLAB_TA/IF_ID_Pipeline_stage/led.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1467.680 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1467.680 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1467.680 ; gain = 731.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1467.680 ; gain = 731.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1467.680 ; gain = 731.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1467.680 ; gain = 731.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1467.680 ; gain = 731.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+--------------+---------------+----------------+
+|Module Name | RTL Object   | Depth x Width | Implemented As | 
++------------+--------------+---------------+----------------+
+|top_module  | stimulus_mem | 32x29         | LUT            | 
+|top_module  | p_0_out      | 32x29         | LUT            | 
++------------+--------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1592.715 ; gain = 856.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1612.074 ; gain = 876.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1612.871 ; gain = 877.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1853.371 ; gain = 1117.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1853.371 ; gain = 1117.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1853.371 ; gain = 1117.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1853.371 ; gain = 1117.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1853.371 ; gain = 1117.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1853.371 ; gain = 1117.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |     3|
+|4     |LUT2   |     3|
+|5     |LUT3   |     4|
+|6     |LUT4   |     2|
+|7     |LUT5   |    10|
+|8     |LUT6   |     7|
+|9     |FDCE   |     8|
+|10    |FDRE   |    36|
+|11    |IBUF   |     2|
+|12    |OBUF   |    16|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1853.371 ; gain = 1117.621
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 1853.371 ; gain = 1047.285
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1853.371 ; gain = 1117.621
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1856.195 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1859.902 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 968aabca
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 77 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:01:09 . Memory (MB): peak = 1859.902 ; gain = 1325.379
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1859.902 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Documents/SEM 2/HWLAB_TA/IF_ID_Pipeline_stage/IF_ID_Pipeline_stage.runs/synth_1/top_module.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_module_utilization_synth.rpt -pb top_module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Feb  2 21:58:23 2026...

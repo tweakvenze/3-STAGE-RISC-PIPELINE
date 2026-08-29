@@ -1,0 +1,11 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_mem_top_behav xil_defaultlib.tb_mem_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rdata' [D:/Documents/SEM 2/HWLAB_TA/Memory_stage/tb_mem.v:28]
+WARNING: [VRFC 10-3705] select index 32 into 'wdata' is out of bounds [D:/Documents/SEM 2/HWLAB_TA/Memory_stage/memory.v:85]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

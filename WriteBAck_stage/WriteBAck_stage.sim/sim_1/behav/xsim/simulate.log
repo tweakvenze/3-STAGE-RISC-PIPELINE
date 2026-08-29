@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+Simulation Finished. Results saved to output.txt and wb_stage_results.vcd.
+$finish called at time : 220 ns : File "D:/Documents/SEM 2/HWLAB_TA/WriteBAck_stage/tb_wb.v" Line 161

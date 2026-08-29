@@ -1,0 +1,255 @@
+
+*** Running vivado
+    with args -log top_mem_fpga.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_mem_fpga.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Feb 15 17:43:58 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top_mem_fpga.tcl -notrace
+create_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 528.457 ; gain = 222.906
+Command: read_checkpoint -auto_incremental -incremental {D:/Documents/SEM 2/HWLAB_TA/Memory_stage/Memory_stage.srcs/utils_1/imports/synth_1/top_mem_fpga.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Documents/SEM 2/HWLAB_TA/Memory_stage/Memory_stage.srcs/utils_1/imports/synth_1/top_mem_fpga.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_mem_fpga -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12556
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1279.699 ; gain = 542.664
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_mem_fpga' [D:/Documents/SEM 2/HWLAB_TA/Memory_stage/top_module.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [D:/Documents/SEM 2/HWLAB_TA/Memory_stage/top_module.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (0#1) [D:/Documents/SEM 2/HWLAB_TA/Memory_stage/top_module.v:46]
+INFO: [Synth 8-6157] synthesizing module 'instr_mem' [D:/Documents/SEM 2/HWLAB_TA/Memory_stage/memory.v:1]
+INFO: [Synth 8-3876] $readmem data file 'imem.hex' is read successfully [D:/Documents/SEM 2/HWLAB_TA/Memory_stage/memory.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'instr_mem' (0#1) [D:/Documents/SEM 2/HWLAB_TA/Memory_stage/memory.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top_mem_fpga' (0#1) [D:/Documents/SEM 2/HWLAB_TA/Memory_stage/top_module.v:1]
+WARNING: [Synth 8-7129] Port pc[31] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[30] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[29] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[28] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[27] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[26] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[25] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[24] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[23] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[22] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[21] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[20] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[19] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[18] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[17] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[16] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[15] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[14] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[13] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[12] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[1] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[0] in module instr_mem is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1396.590 ; gain = 659.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1396.590 ; gain = 659.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1396.590 ; gain = 659.555
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1396.590 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Documents/SEM 2/HWLAB_TA/Memory_stage/led.xdc]
+Finished Parsing XDC File [D:/Documents/SEM 2/HWLAB_TA/Memory_stage/led.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Documents/SEM 2/HWLAB_TA/Memory_stage/led.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_mem_fpga_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_mem_fpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1465.520 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1465.520 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 1465.520 ; gain = 728.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 1465.520 ; gain = 728.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 1465.520 ; gain = 728.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 1465.520 ; gain = 728.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---ROMs : 
+	                    ROMs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 1465.520 ; gain = 728.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:16 ; elapsed = 00:01:21 . Memory (MB): peak = 1595.547 ; gain = 858.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:16 ; elapsed = 00:01:21 . Memory (MB): peak = 1615.578 ; gain = 878.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance imem_inst/instr_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:16 ; elapsed = 00:01:21 . Memory (MB): peak = 1616.406 ; gain = 879.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:30 ; elapsed = 00:01:36 . Memory (MB): peak = 1855.219 ; gain = 1118.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:30 ; elapsed = 00:01:36 . Memory (MB): peak = 1855.219 ; gain = 1118.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:30 ; elapsed = 00:01:36 . Memory (MB): peak = 1855.219 ; gain = 1118.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:30 ; elapsed = 00:01:36 . Memory (MB): peak = 1855.219 ; gain = 1118.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:30 ; elapsed = 00:01:36 . Memory (MB): peak = 1856.215 ; gain = 1119.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:30 ; elapsed = 00:01:36 . Memory (MB): peak = 1856.215 ; gain = 1119.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |     9|
+|3     |LUT1     |     2|
+|4     |LUT2     |     1|
+|5     |LUT3     |     1|
+|6     |LUT6     |     5|
+|7     |RAMB18E1 |     1|
+|8     |FDCE     |     5|
+|9     |FDRE     |    27|
+|10    |IBUF     |     2|
+|11    |OBUF     |    16|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:30 ; elapsed = 00:01:36 . Memory (MB): peak = 1856.215 ; gain = 1119.180
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:00 ; elapsed = 00:01:29 . Memory (MB): peak = 1856.215 ; gain = 1050.250
+Synthesis Optimization Complete : Time (s): cpu = 00:01:31 ; elapsed = 00:01:36 . Memory (MB): peak = 1856.215 ; gain = 1119.180
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1859.805 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1863.375 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 7c706349
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:44 ; elapsed = 00:01:55 . Memory (MB): peak = 1863.375 ; gain = 1330.168
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1863.375 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Documents/SEM 2/HWLAB_TA/Memory_stage/Memory_stage.runs/synth_1/top_mem_fpga.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_mem_fpga_utilization_synth.rpt -pb top_mem_fpga_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 15 17:46:18 2026...

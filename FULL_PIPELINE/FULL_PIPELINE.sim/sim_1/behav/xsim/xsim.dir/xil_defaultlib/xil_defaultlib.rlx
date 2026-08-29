@@ -1,0 +1,12 @@
+0.7
+2020.2
+Nov 14 2025
+19:37:27
+D:/Documents/SEM 2/HWLAB_TA/FULL_PIPELINE/FULL_PIPELINE.sim/sim_1/behav/xsim/glbl.v,1756381829,verilog,,,,glbl,,,,,,,,
+D:/Documents/SEM 2/HWLAB_TA/FULL_PIPELINE/IF_ID.v,1769239764,verilog,,D:/Documents/SEM 2/HWLAB_TA/FULL_PIPELINE/execute.v,D:/Documents/SEM 2/HWLAB_TA/FULL_PIPELINE/opcode.vh,IF_ID;id_ex_reg,,,../../../../;C:/AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/Documents/SEM 2/HWLAB_TA/FULL_PIPELINE/execute.v,1768066240,verilog,,D:/Documents/SEM 2/HWLAB_TA/FULL_PIPELINE/memory.v,D:/Documents/SEM 2/HWLAB_TA/FULL_PIPELINE/opcode.vh,ex_mem_wb_reg;execute,,,../../../../;C:/AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/Documents/SEM 2/HWLAB_TA/FULL_PIPELINE/memory.v,1768066240,verilog,,D:/Documents/SEM 2/HWLAB_TA/FULL_PIPELINE/pipeline.v,,data_mem;instr_mem,,,../../../../;C:/AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/Documents/SEM 2/HWLAB_TA/FULL_PIPELINE/opcode.vh,1768066240,verilog,,,,,,,,,,,,
+D:/Documents/SEM 2/HWLAB_TA/FULL_PIPELINE/pipeline.v,1769252371,verilog,,D:/Documents/SEM 2/HWLAB_TA/FULL_PIPELINE/wb.v,D:/Documents/SEM 2/HWLAB_TA/FULL_PIPELINE/IF_ID.v;D:/Documents/SEM 2/HWLAB_TA/FULL_PIPELINE/execute.v;D:/Documents/SEM 2/HWLAB_TA/FULL_PIPELINE/wb.v,pipe,,,../../../../;C:/AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/Documents/SEM 2/HWLAB_TA/FULL_PIPELINE/tb_pipeline.v,1773594654,verilog,,,,testbench,,,../../../../;C:/AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/Documents/SEM 2/HWLAB_TA/FULL_PIPELINE/wb.v,1768066240,verilog,,D:/Documents/SEM 2/HWLAB_TA/FULL_PIPELINE/tb_pipeline.v,D:/Documents/SEM 2/HWLAB_TA/FULL_PIPELINE/opcode.vh,wb,,,../../../../;C:/AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
